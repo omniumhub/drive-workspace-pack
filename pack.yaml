@@ -1,0 +1,7 @@
+name: drive-workspace-pack
+description: Drive workspace management tools for structured project storage
+version: 0.1.0
+author: Juan
+skills:
+  - skills/drive_workspace.py
+
