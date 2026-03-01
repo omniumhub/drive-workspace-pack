@@ -1,0 +1,4 @@
+name: drive_workspace
+description: Structured Google Drive workspace management tools
+entrypoint: main.py
+version: 0.1.0
