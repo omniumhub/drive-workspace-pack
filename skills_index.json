@@ -1,0 +1,11 @@
+{
+  "skills": [
+    {
+      "id": "drive_workspace",
+      "name": "Drive Workspace",
+      "description": "Structured Google Drive project workspace management tools.",
+      "entry_point": "skills/drive_workspace.py",
+      "risk_level": "low"
+    }
+  ]
+}
