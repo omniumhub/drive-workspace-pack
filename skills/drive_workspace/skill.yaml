@@ -2,3 +2,15 @@ name: drive_workspace
 description: Structured Google Drive workspace management tools
 entrypoint: main.py
 version: 0.1.0
+
+tools:
+  - name: create_project_workspace
+    description: Create a structured project workspace in Google Drive
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+          description: Name of the project to create
+      required:
+        - project_name
