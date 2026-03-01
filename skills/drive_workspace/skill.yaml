@@ -4,13 +4,80 @@ entrypoint: main.py
 version: 0.1.0
 
 tools:
-  - name: create_project_workspace
-    description: Create a structured project workspace in Google Drive
+  - name: create_project
+    description: Create a structured project workspace
     arguments:
       type: object
       properties:
         project_name:
           type: string
-          description: Name of the project to create
       required:
         - project_name
+
+  - name: create_campaign
+    description: Create a campaign folder inside a project
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+        campaign_name:
+          type: string
+      required:
+        - project_name
+        - campaign_name
+
+  - name: write_file
+    description: Write content to a file inside a project
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+        relative_path:
+          type: string
+        content:
+          type: string
+      required:
+        - project_name
+        - relative_path
+        - content
+
+  - name: read_file
+    description: Read content from a file inside a project
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+        relative_path:
+          type: string
+      required:
+        - project_name
+        - relative_path
+
+  - name: list_files
+    description: List files in a project folder
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+        relative_path:
+          type: string
+
+  - name: move_file
+    description: Move a file inside a project
+    arguments:
+      type: object
+      properties:
+        project_name:
+          type: string
+        source:
+          type: string
+        destination:
+          type: string
+      required:
+        - project_name
+        - source
+        - destination
