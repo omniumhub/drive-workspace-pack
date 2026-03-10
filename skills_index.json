@@ -4,6 +4,7 @@
     {
       "name": "drive_workspace",
       "path": "skills/drive_workspace"
+      "type": "python"
     }
   ]
 }
